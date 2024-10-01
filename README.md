@@ -14,9 +14,13 @@ It's a free chrome extension you can install yourself, edit it or use in any way
 2. Search for any word, term or phrase
 3. Use the exclude field if you want the search to not include a specific word, term or phrase.
 
+# Known Issues
+- In some cases, when you scroll through the found results, it will highlight the word grouped togther with other words
+- In some cases, if the search has been found multiple times in the same sentence, it will only find one
+- Extension does not work in view-source mode nor iframes or non-html pages
+
 # Additional Notes
 - All code and instructions are as is. By reading this repository, readme or any code, you acknowledge that you are solely responsible for your own doings.
-- If you have any suggestions, code contributions or any other, contact us and let us know.
 
 Hope you liked this!
 
