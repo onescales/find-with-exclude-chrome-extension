@@ -1,0 +1,126 @@
+/* Apply box-sizing to all elements */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    min-width: 400px;
+    max-height: 600px; /* Ensure the height doesn't exceed Chrome's limit */
+    overflow-y: auto;  /* Enable vertical scrolling if content overflows */
+}
+
+title {
+    font-size:16px;
+    font-weight:bold;
+    height:20px;
+}
+
+.search-bar {
+    display: flex;
+    flex-shrink: 0;
+    flex-grow: 0;
+    align-items: center;
+    background-color: #f1f3f4;
+    border: 1px solid #dcdfe3;
+    padding: 6px 2px 2px 6px; /* top, right, bottom, left */
+}
+
+
+#search-term,
+#exclude-term {
+    height: 28px;
+    margin: 0 4px;
+    padding: 0 8px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #ffffff; /* White background for input fields */
+    flex: 1;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    margin-left: 4px;
+}
+
+.controls button {
+    width: 28px;
+    height: 28px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 0 2px;
+    position: relative;
+    padding: 0;
+    border-radius: 4px;
+}
+
+/* Common styles for all icons */
+.controls button::before,
+.controls button::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform-origin: center;
+}
+
+/* Previous Button Icon */
+#prev-btn::before {
+    border: solid #5f6368;
+    border-width: 0 2px 2px 0;
+    padding: 4px;
+    transform: translate(-50%, -50%) rotate(135deg);
+}
+
+/* Next Button Icon */
+#next-btn::before {
+    border: solid #5f6368;
+    border-width: 0 2px 2px 0;
+    padding: 4px;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+/* Close Button Icon */
+#close-btn::before,
+#close-btn::after {
+    width: 16px;
+    height: 2px;
+    background-color: #5f6368;
+}
+
+#close-btn::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+#close-btn::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+/* Disabled State */
+#prev-btn:disabled::before,
+#next-btn:disabled::before {
+    opacity: 0.5;
+    cursor: default;
+}
+
+#prev-btn:disabled,
+#next-btn:disabled {
+    cursor: default;
+}
+
+#result-count {
+    font-size: 13px;
+    margin: 0 8px;
+    white-space: nowrap;
+}
+
+/* Ensure the popup content doesn't exceed the maximum height */
+.popup-content {
+    max-height: calc(600px - 50px); /* Adjust 50px if you have headers/footers */
+    overflow-y: auto;
+}

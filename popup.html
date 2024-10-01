@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search with Exclude</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body><div class="title"><b>Find with Exclude v0.2.1</b></div>
+    <!-- Search Bar -->
+    <div class="search-bar">
+        <input type="text" id="search-term" placeholder="Find..." autocomplete="off" />
+        <input type="text" id="exclude-term" placeholder="Exclude..." autocomplete="off" />
+        <div class="controls">
+            <button id="prev-btn" title="Previous match" aria-label="Previous match"></button>
+            <button id="next-btn" title="Next match" aria-label="Next match"></button>
+            <span id="result-count">0 of 0</span>
+            <button id="close-btn" title="Close" aria-label="Close"></button>
+        </div>
+    </div>
+
+    <!-- Main Content Wrapped in popup-content -->
+    <div class="popup-content">Version in beta. Provided as is. Feel free to <a href="https://github.com/onescales/find-with-exclude-chrome-extension" target="_blank">contribute</a>
+        <!-- If you have additional content, place it here -->
+        <!-- This div helps manage the height and scrolling -->
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
