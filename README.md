@@ -21,6 +21,7 @@ It's a free chrome extension you can install yourself, edit it or use in any way
 
 # Additional Notes
 - All code and instructions are as is. By reading this repository, readme or any code, you acknowledge that you are solely responsible for your own doings.
+- See article at https://onescales.com/blogs/main/find-with-exclude-free-chrome-extension
 
 Hope you liked this!
 
