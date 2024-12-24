@@ -25,6 +25,9 @@ It's a free chrome extension you can install yourself, edit it or use in any way
 
 Hope you liked this!
 
+# Support Us / Donate
+If this helped you in any way, please consider supporting us at https://onescales.com/pages/support-us
+
 # Suggestions, Comments and Contact
 If you have any suggestions, comments, insight or just want to say hi, thanks or share your experience, you can contact us at:
 - Our WebSite: https://onescales.com/
